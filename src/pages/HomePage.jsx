@@ -8,6 +8,7 @@ import panela from '../../public/images/panela de ceramica.jpg';
 import imagem from '../../public/images/imagem.jpg';
 import item from '../../public/images/colchao.jpg';
 import item2 from '../../public/images/quarto.jpg';
+
 const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -27,12 +28,12 @@ const HomePage = () => {
 
   
   const images = [
-    'lugar.jpg',
-    'familia.jpg',
-    'espelho.jpg',
-    'silicone.jpg',
-    'panela de ceramica.jpg',
-    'imagem.jpg',
+    lugar,
+    familia,
+    espelho,
+    silicone,
+    panela,
+    imagem,
   ];
 
   
@@ -68,7 +69,7 @@ const HomePage = () => {
         <div className="container">
           <div style={{ textAlign: 'center', overflow: 'hidden' }}>
             <img className='carousel-img'
-              src={[espelho, lugar, familia, silicone, panela, imagem][currentImageIndex % 6]}
+              src={images[currentImageIndex]}
               alt={`Item ${currentImageIndex + 1}`} 
             />
           </div>
