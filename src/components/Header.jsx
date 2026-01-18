@@ -36,7 +36,7 @@ const Header = () => {
             >
               <ul className="navbar-nav nav-pills">
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/" end onClick={closeMenu}>Página Inicial</NavLink>
+                  <span className="nav-link" style={{ cursor: 'default', pointerEvents: 'none' }}>Página Inicial</span>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/sala" onClick={closeMenu}>Sala</NavLink>
