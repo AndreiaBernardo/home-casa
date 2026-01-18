@@ -85,10 +85,8 @@ const HomePage = () => {
                   backgroundColor: index === currentImageIndex ? '#333' : '#ddd',
                   borderRadius: '50%',
                   display: 'inline-block',
-                  cursor: 'pointer',
                   transition: 'background-color 0.3s'
                 }}
-                onClick={() => setCurrentImageIndex(index)}
               ></span>
             ))}
           </div>
